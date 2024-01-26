@@ -1,0 +1,53 @@
+---
+layout: post
+title: "Cryptorave 2023"
+date: 2023-06-19 21:08:20 +0000
+categoories: jekyll update
+---
+ 
+## O que é
+
+De acordo com o <a href="https://2023.cryptorave.org/">site oficial</a> Cryptorave é "um evento anual que reúne, em 36 horas, diversas atividades sobre segurança, criptografia, hacking, anonimato, privacidade e liberdade na rede. A CryptoRave é aberta e gratuita e realizada na cidade de São Paulo, as inscrições serão feitas no local."
+
+A 7° edição do evento &#x2012; a primeira em 3 anos, devido a pandemia do COVID-19 &#x2012; ocorreu na CCSP em São Paulo entre os dias 5 e 6 de maio. Esse é um pequeno registro sobre as palestra que vi nesse evento. A programação completa do evento pode ser visto <a href="https://we.riseup.net/assets/871735/programacaoCR23.pdf">aqui</a>.
+
+
+## Mapeando a vigilância pública (Surveillance Under Surveillance)
+
+A primeira palestra da noite trata de mapeamento de câmeras de segurança que filmam áreas (geralmente) públicas. Muitas dessas câmeras possuem acesso livre, isto é, qualquer um pode acessa-la. Enquanto que outras estão vulneráveis a ataques e podem ser hackeadas.
+
+Sickeira - autor da palestra - se baseia em um <a href="https://sickeira.blogspot.com/2020/06/open-street-map-cameras-no-osm.html">texto de seu blog de 2020</a> para mostrar como registrar uma câmera no Open Street Map que automaticamente é compartilhada para o projeto <a href="https://sunders.uber.space/?lat=-23.65474509&lon=-46.49559975&zoom=14">Surveillance Under Surveillance</a>, que visa mapear tal vigilância.
+
+Existem 4 tipos de câmera registradas, cada uma representada por um ícone de uma cor:
+- Vermelho: câmera filmando região pública cujo acesso é aberto a todos;
+- Azul: câmera filmando uma área exterior e com acesso restrito;
+- Verde:câmera filmando área interior e com acesso restrito; e
+- Marrom: câmera sem informações sobre o tipo de acesso.
+
+
+A maioria das câmeras mapeadas são em Santo André, onde Sickeira mora. Não encontrei muitas outras câmeras acessíveis fora de lá.
+
+
+## Primeiros passos com self-hosting       
+
+Nessa curta apresentação, Caio Volpato mostrou os primeiros passos para self-hosting. Os slides, que podem ser baixados do <a href="https://caioau.net/blog/cr2023-intro-selfhosting/">site dele</a>, são uma ótima referência e dispensam mais comentários.
+  
+## Desafios de Segurança em Dispositivos IoT: Como mitigar riscos de vulnerabilidade
+
+Mesmo antes dessa apresentação, lembro de ter visto a seguinte frase na internet: <em>"The S in IoT stands for Security"</em>. Essa apresentação enfatiza ainda mais esse lema explorando o caso Mirai, infelizmente não registrei se os slides ficaram estão disponivéis em algum lugar na web.
+
+## radare2: primeiros passos em engenharia reversa com a ferramenta.
+
+radare2 é uma poderosa ferramenta de engenharia reversa. Outras opções são:
+
+- Binary Ninja
+- Ghidra
+- IDA Free e IDA Pro
+
+O pacote da ferramenta pode ser encontrada no Debian Sid. Ela ainda é muito instalvel...
+Denis Zanin autor baseia a apresentação em <a href="https://deniszanin.com/introducao-ao-radare2-descobrindo-quake-3-arena-crack-engenharia-reversa/">um post de seu blog</a>, em que mostra como crackear Quake III. O post é bem completo e assim despensa mais comentários.
+  
+## Quem faz o Linux?
+
+Grandes empresas de TI. São elas que principalmente desenvolvem o kernel linux. Tony defini nessa palestra o que é o kernel linux e mostra <a href="https://lwn.net/Articles/915435/">essa tabela</a> que mostra os maiores contribuidores para o kernel são empresas como Intel, AMD, Oracle e Huawei.
+Tony é desenvolvedor do kernel. Como estou começando a brincar com desenvolvimento de kernel, perguntei a ele como testar o kernel em uma VM, ao invés de instalar na minha máquina host, ele então me passou <a href="https://andrealmeid.com/post/2020-03-10-bootstrap-arch/">post de seu blog</a> em que ele mostra como montar um sistema de arquivos minimalista baseado em Arch. Esse post me deu um ótimo norte que talvez vire seu próprio post nesse site.
