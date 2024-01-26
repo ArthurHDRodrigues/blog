@@ -1,7 +1,7 @@
 ---
-layout: page
-title: Revistas digitalizadas
-permalink: /mag/
+layout: post
+title: "Repositorio de Revistas Digitalizadas"
+date: 2024-01-26 18:51:00 +0300 
 ---
 
 
