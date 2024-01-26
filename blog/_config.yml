@@ -19,7 +19,7 @@
 # in the templates via {{ site.myvariable }}.
 
 title: The Beast that shouted '' or 1=1; /*' at the Heart of the World.
-email: your-email@example.com
+#email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:
   Blog pessoal onde guardo textos que escrevo.
 baseurl: "" # the subpath of your site, e.g. /blog
