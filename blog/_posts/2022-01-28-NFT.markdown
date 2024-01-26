@@ -5,18 +5,140 @@ date:   2022-01-28 21:08:20 +0000
 categories: jekyll update
 ---
 
+## NFT's como ideia
 
-# oi 
+NFT se propõe a ser um registro descentralisado de propriedade privada. Ou seja, um registro de que uma determinada pessoa possui um determinado objeto. Para marcar esse registro, usa-se principalmente a <a href="https://en.wikipedia.org/wiki/Ethereum">Ethereum</a>, uma blockchain que permite a execução de código arbitrário com o custo de execução proporcional ao número de passos a serem executados e a quantidade de memória consumida. O ato de registrar um token na blockchain é chamado de <em>mint</em>, no Brasil, gerou-se o termo “mintar uma NFT”.
 
-## oi
+Quando falamos de propriedade privada, pensamos primeiramente em objetos físicos escassos, como dinheiro, ouro, carros, etc. A ideia de isolar um objeto e decreta-lo como "meu" vem justamente da sua escassez. Já no meio digital, escassez parece algo bem pouco intuito, mas existem alguns recursos puramente digitais que de fato são escassos, Vitalik Buterin, em <a href="https://www.youtube.com/watch?v=gjwr-7PgpN8">seu vídeo</a> explicando o que é Ethereum, mostra uma aplicação válida: O registro de DNS.
+
+
+
+## Aplicação tosca
+
+No entanto, ao invés de registrar recursos realmente escassos. A maioria esmagadora do mercado é constituida por registro de jpegs, gif, modelos 3D, enfim, arquivos de mídia que podem facilmente ser reproduzidos arbitrariamente.
+
+Inicialmente a ideia de registra-los como NFTs é de transforma-los em entidades únicas. Mesmo que alguém consiga copiar aquele mesmo arquivo byte-a-byte, o criador da NFT dirá que ambos são distintos, somente devido ao fato de um estar registrado numa blockchain. Como resultado, temos uma falsa escassez artificial desses arquivos e assim, de alguma forma, uma falsa atribuição de valor.
+
+Enquanto, no mundo físico, vemos objetos gerando a ideia de propriedade privada, no mundo digital, vemos a propriedade privada gerando a (tentativa de) escassez.
+
+O único "valor" em qualquer NFT é a hype que o produto tem, é a especulação de que o valor irá subir. De que o dinheiro gasto no registro é na verdade um investimento. Que amanhã alguma coisa pode acontecer (como o Neymar começar a usar uma NFT como oto de perfil do Twitter) e os preços aumentarem.
+
+No artigo <a href="https://www.fooledbyrandomness.com/BTC-QF.pdf">Bitcoin, Currencies, and Fragility</a>, os autores argumentam que o valor intrínseco da Bitcoin é exatamente 0, pois seu preço é devido ao interesse de pessoas comprarem, venderem e minerarem. Podemos trazer essa argumentação para NFT's. Com certeza o valor delas cairá para 0, não é uma questão de 'se' cairá, mas sim de 'quando' e quanto será o maior preço logo antes dessa queda, quando é o melhor momento para sair desse mercado.
+
+Se o investidor sabe disso, de que está em um mercado especulativo, então é só um jogo de aposta para ver o quão alto os preços vão até despencar. Já se não souber, se achar que é um mercado legítimo e/ou que existe um valor verdadeiro nesses produtos, então vai inevitavelmente perder o que “investiu”.
+
+Por fim, as transações desses atos especulativos sobrecarregam o sistema Ethereum, fazendo com que o preço para validar novos blocos suba consideravelmente e assim impossibilita, economicamente falando, outros projetos presentes nessa blockchain.
+
+
+## Exemplos de golpes
+
+
+Existem diversos golpes aplicaveis no mercado de NFT's. 
+
+Um golpe bem comum é falsifica uma alta hype em uma NFT. Para isso, o golpista cria várias contas em um Marketplace, é dificil de associar essas contas (chamadas de <em>wallets</em>) a pessoas físicas e começa a vender uma NFT repetidas vezes entre essas contas cada vez a preços mais altos. Assim, uma pessoa inocente, ao ver o histórico de preços da NFT, percebe um aumento do mesmo e se interessa, e eventualmente compra o produto esperando aquela curva continue a subir.
+
+Um segundo golpe, muito mais difícil de ser reproduzido, usa uma falha no sistema de transições: O remetende não precisa aprovar uma transação para que ela seja efetuada. Quando estamos transferindo somente dinheiro, como Bitcoin, não há problemas. No entanto, quando podemos mandar um programa para outrem, é só uma questão de tempo até alguém escrever um vírus que transfere todos os produtos da wallet do remetente que o executa.
+
+
+Esse golpe é mais difícil de se reproduzir, pois na Ethereum o código rodado é compilado em linguagem de máquina virtual logo é difícil de se fazer engenharia reversa no vírus já compilado, seria necessário, então, aprender a linguagem e reinventar o vírus.
+
+
+Um outro golpe, esse digno de ser chamado de <em>Scam</em> pela comunidade, é criar um projeto -- geralmente um jogo -- em que seja necessário comprar NFT's para participar/jogar e que promete de alguma forma um retorno do investimento. No entanto, assim que gente o suficiente entra no projeto, os golpistas somem e abandonam o jogo, deixando todos aqueles que entraram sendo donos de NFT's que valem absolutamente nada. Um exemplo atual é o <a href="https://www.youtube.com/watch?v=ftAgLw5gAHw">King Rooster</a>. Esse modelo de scam não é limitado a NFT's, cripto moedas também podem ser palco para isso, um exemplo famoso é o <a href="https://www.youtube.com/watch?v=zkBQF9QJLHY">Squid Game Token</a>. Uma lista de Scams pode ser achada aqui <a href="https://www.youtube.com/watch?v=YPvhmrjcfJw&list=PLjtfr6GCy89i9jP58uO-q6UwaGyb03B6A">aqui</a>.
+
+
+## Uma implementaçãoe merda
+
+Retomando, NFT se propõe a se
+- Uma representação de propriedade priva
+- Decentralizada
+
+Não muito surpreendentemente, a implementação atual não compre essas promessas.
+
+Como comentado anteriomente, o registro da NFT é feito na blockchain Ethereum. Para registrar algo é necessário pagar a alguém (chamado de minerador) para validar seu registro, qualquer pessoa pode validar registros, no entanto, a barreira de entrada, hoje, é imensa. É virtualmente impossível uma pessoa casual validar novos blocos, pois para competir com os profissionais seria necessário adquirir muitos equipamentos dedicados.
+
+
+O custo de mineração é proporcional, dentre outras coisas, a quantidade de memória que seu registro ocupa. Para reduzir esse custo, todas as NFT's que vi até então não registram a imagem, vídeo, música, etc diretamente na blockchain, mas sim um número único que identifica a imagem. Peguemos um exemplo.
+
+
+Olhemos para <a href="https://opensea.io/assets/0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d/5211">o token número 5211</a> do BoredApeYachtClub, ilustrado abaixo e, no momento da escrita desse texto, precificado em 110 ether (US$ 275.222,20).
+
+
+<img src="../images/macaco_feio_pra_krai.png" width=100% alt=""/>
+</div></div>
+
+Ele foi mintado no bloco <a href="https://etherscan.io/tx/0xc3c56a10e5d94cbccb1937bfac5abbe77c85b071a2c4f540d8ce9e54c0a7f8e8">0xc3c56...8e8</a> junto a outros 19 tokens. Podemos, perto do final da página, ao clicar me <em>“Click to see More”</em> ver exatamente o conteúdo do bloco:
+
+
 {% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
+Function: mintApe(uint256 numberOfTokens)
+
+MethodID: 0xa723533e
+[0]:  0000000000000000000000000000000000000000000000000000000000000014
 {% endhighlight %}
 
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+A função que foi paga para ser computada é a <em>mintApe</em>, cujo único parametro é o número 20 (note que 14 em hexadecimal = 20 em decimal). O mais interessante é que essa função não recebe os identificadores dos tokens a serem mintados, mas sim a quantidade deles nesse bloco. Como os identificadores são mintadores sequêncialmente (primeiro se minta o 1 depois o 2, em seguida o 3 e assim por diante) pode-se deduzir o número de tokens dessa coleção já mintados. Se realmente temos essa situação, então <b>não temos nem siquer os identificadores na blockchain</b>. Claro, precisaria fazer uma análise no código para poder dizer como esse método funciona e exatamente o que está registrado.
+
+
+Curiosamente, nos <a href="https://etherscan.io/tx/0x92e077608e8d2bc95f564531034ca128b635efb62a522969af325c21760fa25b">registros de transferência</a> desse NFT é usado seu identificador único: 145b(hex)=5211(dec).
+
+
+{% highlight ruby %}
+Function: safeTransferFrom(address from, address to, uint256 tokenId)
+
+MethodID: 0x42842e0e
+[0]:  0000000000000000000000003cf9a2b7aaad51e107453e510bfd470a06205d4c
+[1]:  000000000000000000000000ed2ab4948ba6a909a7751dec4f34f303eb8c7236
+[2]:  000000000000000000000000000000000000000000000000000000000000145b
+{% endhighlight %}
+
+Registrar somente o identifacor traz problemas. O primeiro é no sentido filosófico, existe uma grande discussão so **o ** a propriedade privada, aqui tomamos somente como uma associação entre um objeto e uma pessoa. Notemos que, adotando essa definição, essa implementação não contenta essa definição.
+
+
+Uma pessoa, nessa implementação, não possui a mídia em si, mas sim o registro dela. A pessoa que é dita dona do token #5211 da coleção BoredApeYachtClub não é dona da imagem acima, mas sim da string 'ERC-721-5211', onde ERC-721 é um código único para a BoredApeYachtClub.
+
+
+Se alguém questionar o suposto dono da #5211 qual imagem é dele, não há como provar, usando somente o sistema de blockchain, que a imagem acima é dele. Sem essa propriedade, como posso realmente dizer que alguém é dono da imagem?
+
+
+Dessa forma, nessa implementação, não há de fato uma representação de propriedade privada.
+
+
+No entanto, pensa o leitor, pode-se consultar o banco de dados da BoredApeYachtClub e verificar ali que seu item #5211 é a imagem acima. Para ser exato, acessando o site da BoredApeYachtClub não encontrei um banco de dados para consulta, o único registro que encontrei associando aquela imagem ao identificador #5211 são <a href="https://opensea.io/assets/0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d/5211">as páginas referentes a ela no opensea</a>, o principal Marketplace usado para comercializar NFT's.
+
+
+Esse questionamento mostra, na verdade, que essa implementação de NFT não é independente, ou seja, que ela funciona em condição da existência de outros sistemas além da Ethereum. Nesse caso, ainda, depende de um sistema centralizado, propriamente dito, a OpenSea. Se algum dia esse marketplace sumir, então não haverá como provar que a dita imagem e registro se associam. Dessa forma, essa implementação não cumpre a promessa de ser um sistema decentralizado.
+
+
+Cada NFT é centralizada na organização que a criou ou no marketplace em que ela é negociada.
+
+
+Como poderiamos solucionar ambos os problemas numa tacada só? Uma solução imediata é colocar a imagem, byte-a-byte, na blockchain, mas isso traria um gasto enorme comparado a implementação atual. Uma outra solução é usar técnicas de reconstrução esperta: No caso dessas imagens de macacos, elas são construídas de forma aleatória a partir de blocos. Podemos ver quais blocos foram usados na seção <em>Properties</em> da página do token, <a href="https://opensea.io/assets/0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d/5211">no caso da #5211</a>, podemos ver que ele é a combinação do background: Orange; Clothes: Sailor Shirt; Earring: Cross; etc, assim pode-se registra byte-a-byte cada bloco e o token em si ser somente o registro dos identificadores desses blocos, ou seja, NFT's que são combinações de outras NFT's.
+
+
+## Onde estamos e para onde vamos?
+
+Então o que devemos fazer? Banir todos os donos de NFTs do plano existencial? Talvez.
+
+
+Algumas empresas estão tentando embarcar em NFT's sem muito sucesso. Para citar alguns exemplos, algumas empresas de games tentaram integrar NFT's em seus produtos, mas estão sofrendo <a href="https://www.youtube.com/watch?v=Z36q407Rze0">muita retalhação da comunidade</a>. O Twitter anunciou <a href="https://www.coindesk.com/business/2022/01/20/twitter-launches-nft-profile-picture-verification/">um sistema de verificação</a> para uso de NFT como foto de perfil.
+
+Então o que devemos fazer? Ao meu ver, devemos pensar além, aprender com os erros atuais e melhorar os protocolos. Entender o ato especulativo como mais um tipo de ataque a sistemas e projetar algoritmos que evitem isso. Repensar sistemas e questionar se realmente precisamos de uma criptomoeda para cada pequeno sistema.
+
+
+Existem aplicações válidas de blockchain. Como, já comentado, um serviço descentralizado de DNS, muitas empresas estão tentando implementar essa ideia. Algumas usando Ethereum, como a <a href="https://decentraweb.org/">decentraweb</a>. Já outras criam a própria blockchain, como a <a href="https://www.namebase.io/">namebase</a>. Outros devs ainda evitam blockchain como um todo, como a <a href="https://torrentfreak.com/oddns-decentralized-and-open-dns-to-defeat-censorship-120407/">ODDNS</a>.
+
+
+Comentar sobre essa e outras aplicações relevantes usando blockchain e crypto merecem um texto a parte.
+
+## Material adicional
+    
+- <a href="https://www.youtube.com/watch?v=YQ_xWvX1n9g">Line Goes Up – The Problem With NFTs</a>
+Um documentário de 2h20 de duração sobre NFT apresentando toda a problematica da situação em mais detalhes. <b>De longe o material mais interessante sobre o assunto.</b>
+
+
+- <a href="https://www.youtube.com/watch?v=gjwr-7PgpN8">DEVCON1: Understanding the Ethereum Blockchain Protocol - Vitalik Buterin</a>
+Gravação de uma conferencia de devs de Ethereum, nela Vitalik explica a grosso modo o que é a blockchain Ethereum
+
+
+- <a href="https://www.fooledbyrandomness.com/BTC-QF.pdf">Bitcoin, Currencies, and Fragility</a>
+Um artigo sobre a fragilidade do Bitcoin, vale a pena ver as referências também.
