@@ -1,9 +1,12 @@
 ---
 layout: post
-title: "Compilado de links para recursos de Cybersegurança"
+title: "Bookmark"
 date: 2024-01-26 18:51:00 +0300 
 ---
 
+## Introdução
+
+Essa página agrega diferentes links e recursos relacionados a hacking e cybersegurança.
 
 ## Agregadores
 -  <a href = "https://packetstormsecurity.com/">packetstorm</a>: Um agregador de exploits.
