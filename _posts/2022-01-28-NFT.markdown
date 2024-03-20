@@ -63,8 +63,7 @@ O custo de mineração é proporcional, dentre outras coisas, a quantidade de me
 Olhemos para <a href="https://opensea.io/assets/0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d/5211">o token número 5211</a> do BoredApeYachtClub, ilustrado abaixo e, no momento da escrita desse texto, precificado em 110 ether (US$ 275.222,20).
 
 
-<img src="../images/macaco_feio_pra_krai.png" width=100% alt=""/>
-</div></div>
+![NFT]({{url}}/blog/images/macaco_feio_pra_krai.png)
 
 Ele foi mintado no bloco <a href="https://etherscan.io/tx/0xc3c56a10e5d94cbccb1937bfac5abbe77c85b071a2c4f540d8ce9e54c0a7f8e8">0xc3c56...8e8</a> junto a outros 19 tokens. Podemos, perto do final da página, ao clicar me <em>“Click to see More”</em> ver exatamente o conteúdo do bloco:
 
