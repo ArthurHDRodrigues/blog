@@ -24,5 +24,8 @@ jobs:
           jekyll/builder:latest /bin/bash -c "chmod -R 777 /srv/jekyll && jekyll build"
     - name: Deploy
       uses: actions/deploy-pages@v2
+      permissions:
+        pages: write      # to deploy to Pages
+        id-token: write   # to verify the deployment originates from an appropriate source
       with:
         folder:  _site/
