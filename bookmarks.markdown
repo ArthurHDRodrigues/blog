@@ -32,7 +32,10 @@ Essa página agrega diferentes links e recursos relacionados a hacking e cyberse
 - <a href="https://redteamvillage.io/"> Red Team Village </a>
 - <a href="https://linuxpentest.com.br/"> Linuxpentest </a>
 - <a href="https://null-byte.wonderhowto.com/collection/cyber-weapons-lab/"> Cyber Weapons Lab </a>
+
+### Brasileiros
 - <a href="https://deniszanin.com/"> Blog de Denis</a>: Blog sobre privacidade, segurança, engenharia reversa e jornalismo.
+- [caioau](https://caioau.net/): Blog pessoal do Caio volpato.
     
 ## Underground
 - <a href="https://cultdeadcow.com">culto da vaca morta</a>
