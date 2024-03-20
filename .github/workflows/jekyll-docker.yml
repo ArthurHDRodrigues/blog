@@ -25,5 +25,4 @@ jobs:
     - name: Deploy
       uses: actions/deploy-page@v2
       with:
-        folder:
-          - _site/
+        folder:  _site/
