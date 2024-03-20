@@ -5,6 +5,8 @@ on:
     branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
+  workflow_dispatch:
+
 
 jobs:
   build:
@@ -20,3 +22,8 @@ jobs:
           -v ${{ github.workspace }}:/srv/jekyll \
           -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
           jekyll/builder:latest /bin/bash -c "chmod -R 777 /srv/jekyll && jekyll build"
+    - name: Deploy
+      uses: actions/deploy-page@v2
+      with:
+        folder:
+          - _site/
