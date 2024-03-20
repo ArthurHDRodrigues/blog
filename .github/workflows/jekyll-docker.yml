@@ -23,6 +23,6 @@ jobs:
           -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
           jekyll/builder:latest /bin/bash -c "chmod -R 777 /srv/jekyll && jekyll build"
     - name: Deploy
-      uses: actions/deploy-page@v2
+      uses: actions/deploy-pages@v2
       with:
         folder:  _site/
