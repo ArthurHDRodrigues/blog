@@ -15,9 +15,22 @@ Nesse papel de consumidor, uma vez escolhido um produto, somos colocado em uma p
 Já qualquer objeto que criamos para nós mesmos não é considerado um produto.
 Se criamos um objeto para outra pessoa, então esse objeto pode ser(mas não necessariamente é)  considerado um produto. Nesse caso, tomamos então o papel ativo de criador do produto, definindo como o consumidor daquele produto irá interagir com nossa criação.
 
-Podemos considerar o *designer de produto* como o profissional responsável por definir essa relação consumidor-produto.
-Enquanto que um hacker é aquele que subverte o projeto de consumo original de um produto. Essa subverção pode ser simplemente o uso inesperado de uma ferramente, mas muitas vezes também envolve alguma modificação no produto.
+Podemos considerar um *designer de produto* como o profissional responsável por definir essa relação consumidor-produto.
+Enquanto que um hacker é aquele que subverte essa relação interagindo de maneira inesperada com o produto e, muitas vezes, também modificando o produto.
 
+Essa definição pode parecer um pouco estranha por fugir da percepção de que hackers estão exclusivamente associados a segurança informação.
+Mas, como pretendo elaborar nas próximas seções, esse significado esteve presente no *cyber-espaço* desde seu momento embrionário.
+
+Ao mesmo tempo, é um tanto quanto cafona escrever sobre "O que é ser um hacker". O termo já sofreu um desgaste 
+ mística na socie 
+Por isso acho que vale a pena, mesmo que cafona ou repetitivo, a elaborar sobre esse termo.
+
+## 
+
+[How To Become A Hacker](http://www.catb.org/~esr/faqs/hacker-howto.html)
+
+
+[Linux Kernel Hackers' Guide](https://tldp.org/LDP/khg/HyperNews/get/khg.html)
 
 Hoje o termo Hacker está muito mais relacionado à segurança da informação.
 
