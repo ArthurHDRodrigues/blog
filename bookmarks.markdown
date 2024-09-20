@@ -6,7 +6,7 @@ date: 2024-01-26 18:51:00 +0300
 
 ## Introdução
 
-Essa página agrega diferentes links e recursos relacionados a hacking e cybersegurança.
+Essa página agrega diferentes links e recursos relacionados a hacking, cybersegurança, eng. de software e DevOps.
 
 ## Agregadores
 -  <a href = "https://packetstormsecurity.com/">packetstorm</a>: Um agregador de exploits.
@@ -47,3 +47,7 @@ Essa página agrega diferentes links e recursos relacionados a hacking e cyberse
 - <a href="https://exchange.xforce.ibmcloud.com/activity/map">Mapa da IBM</a>: Um mapa feito pela IBM sobre ameaças
 - <a href="https://defcon.org/">Defcon</a>
 - <a href="https://owasp.org/">Open Web Application Security Project</a>: Destaque para <a href="https://cheatsheetseries.owasp.org/cheatsheets/LDAP_Injection_Prevention_Cheat_Sheet.html">a série de cheatsheets</a> que fizeram. 
+
+
+## Engenharia de Software
+- [Arquitetura do WhatsApp](https://newsletter.systemdesign.one/p/whatsapp-engineering)
