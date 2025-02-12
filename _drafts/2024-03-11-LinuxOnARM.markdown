@@ -32,9 +32,34 @@ supports our target machine. The author documents this experiments in this [READ
 ## Testing candidates
 The following is a list of possibles canditates and my notes about testing them
 
+### debian-cdimage Release 0.4
+- Source: [Github Release page](https://github.com/aarch64-laptops/debian-cdimage/releases/tag/v0.4)
+
+### Installing
+### Reproducing
+
+### debos
+- Source: [Github Source page](https://github.com/go-debos/debos)
+
+### Installing
+### Reproducing
+
 ### imagebuilder Release 230308-01
 - Source: [Github Release page](https://github.com/hexdump0815/imagebuilder/releases/tag/230308-01)
 
+### Installing
+### Reproducing
+
 ### imagebuilder Release 240107-01
 - Source: [Github Release page](https://github.com/hexdump0815/imagebuilder/releases/tag/240107-01)
+
+### Installing
+### Reproducing
+
+### meta-debian
+- Source: [Github Source page](https://github.com/meta-debian/meta-debian)
+
+### Installing
+### Reproducing
+
 
