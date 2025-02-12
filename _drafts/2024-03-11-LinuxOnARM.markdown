@@ -7,6 +7,8 @@ date: 2024-03-11 18:51:00 +0300
 
 ## Hardware information
 
+F2 to enter the BIOS
+
 ## Relevant Link
 
 - A quick search on YT shows [this video](https://www.youtube.com/watch?v=sMRur1pCW9Q), which show a Debian installed on our target hardware. The image used was from an experimental project called [imagebuilder](https://github.com/hexdump0815/imagebuilder/blob/main/systems/snapdragon_7c_woa/readme.md). Releases
