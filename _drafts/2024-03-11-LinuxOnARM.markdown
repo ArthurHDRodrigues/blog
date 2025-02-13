@@ -8,6 +8,7 @@ date: 2024-03-11 18:51:00 +0300
 ## Hardware information
 
 F2 to enter the BIOS
+F8 to enter a recovery 
 
 ## Relevant Link
 
@@ -49,6 +50,22 @@ The following is a list of possibles canditates and my notes about testing them
 ### imagebuilder Release 240107-01
 - Source: [Github Release page](https://github.com/hexdump0815/imagebuilder/releases/tag/240107-01)
 #### Installing
+
+Downloaded the `.img.gz`; Unzipped it with:
+```{bash}
+cd Downloads
+gzip -d snapdragon_7c_woa-aarch64-bookworm.img.gz
+```
+
+Recorded on a SD card with `dd`:
+```{bash}
+sudo dd if=/home/arthur/Downloads/snapdragon_7c_woa-aarch64-bookworm.img of=/dev/sdc bs=4M status=progress
+```
+
+Booting from the SD port didn't work, because the SD Card wasn't recognized by the BIOS.
+Using a USB adapter for the SD Card worked!
+I accessed the BIOS using the F2 key on boot and changed the boot order to priotize the SD port (secure boot was already turned off). 
+
 #### Reproducing
 
 ## Build tools
