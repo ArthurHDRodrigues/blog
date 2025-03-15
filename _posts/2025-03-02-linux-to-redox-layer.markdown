@@ -13,11 +13,16 @@ The objective is to "port" all device drivers to redox at once.
 
 ## Introduction
 
-[Linux](https://en.wikipedia.org/wiki/Linux) is the most used kernel used in the world and [Mars](https://www.fosslinux.com/45797/linux-lands-on-mars-a-victory-for-open-source.htm).
+I had this interesting idea some weeks ago.
+I don't know if it is possible, so 
+I'll write about it here and maybe code a proof of concept some day.
+
+[Linux](https://en.wikipedia.org/wiki/Linux) is the most used kernel in the world and [Mars](https://www.fosslinux.com/45797/linux-lands-on-mars-a-victory-for-open-source.htm).
 This popularity implies in a large range of supported machines and thus in drivers implemented for linux.
 Actually the majority of kernel code is device drivers.
 
-[Redox-os](https://www.redox-os.org/) is a fairly new kernel/OS, so it lacks drivers.
+But it is not the only open source OS out there.
+[Redox-os](https://www.redox-os.org/) is a fairly new kernel/OS written in Rust.
 Write drivers for all hardware supported by linux is a massive task to implement and maintain.
 
 Since this task is herculean, we need to think about another solution.
