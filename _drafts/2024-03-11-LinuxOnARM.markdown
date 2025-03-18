@@ -42,11 +42,6 @@ The following is a list of possibles canditates and my notes about testing them
 
 [Debian CD Image Build Instructions](https://github.com/aarch64-laptops/debian-cdimage/tree/main/doc)
 
-### imagebuilder Release 230308-01
-- Source: [Github Release page](https://github.com/hexdump0815/imagebuilder/releases/tag/230308-01)
-#### Installing
-#### Reproducing
-
 ### imagebuilder Release 240107-01
 - Source: [Github Release page](https://github.com/hexdump0815/imagebuilder/releases/tag/240107-01)
 #### Installing
