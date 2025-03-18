@@ -9,43 +9,30 @@ date: 2025-03-02 15:02:35 +0300
 The basic idea is to develop a compatibility layer to run linux modules on redox-os.
 It'd be something similar to [Wine](https://www.winehq.org/), but to be a layer between linux and redox-os.
 
-The objective is to "port" all device drivers to redox at once.
+The objective is to "port" all linux's device drivers to redox at once.
 
-## Introduction
+## The idea
 
-I had this interesting idea some weeks ago.
-I don't know if it is possible, so 
-I'll write about it here and maybe code a proof of concept some day.
+I had this interesting idea some weeks ago and
+I don't know if it is possible, so I'll write about it here and maybe some day work toward a proof of concept.
 
 [Linux](https://en.wikipedia.org/wiki/Linux) is the most used kernel in the world and [Mars](https://www.fosslinux.com/45797/linux-lands-on-mars-a-victory-for-open-source.htm).
-This popularity implies in a large range of supported machines and thus in drivers implemented for linux.
+This popularity implies in (and is possible by) a large range of supported machines and thus in drivers implemented for linux.
 Actually the majority of kernel code is device drivers.
 
 But it is not the only open source OS out there.
-[Redox-os](https://www.redox-os.org/) is a fairly new kernel/OS written in Rust.
-Write drivers for all hardware supported by linux is a massive task to implement and maintain.
+[Redox-os](https://www.redox-os.org/) is a fairly new kernel/OS written in Rust that uses the microkernel architecture.
+It'd be nice if redox-os supported as much hardware as linux, but it lacks the necessary drivers and of course
+rewrite all linux's drivers is a massive task to implement and maintain.
 
-Since this task is herculean, we need to think about another solution.
+Then I came up with an idea that I must point out again that I don't know if it is possible.
 The idea is to develop a compatibility layer to run linux modules on redox-os.
 
-It'd be something similar to [Wine](https://www.winehq.org/), but not exactly equal.
-Wine implements the Windows syscalls.
-It'd be a relative small binary that virtualize an enviroment to run 
+This compability layer would provide a virtualized enviroment for linux modules to run in redox-os just as another userspace process.
+It wouldn't be a virtual machine, because we are not virtualizing hardware.
+It'd be something similar to [Wine](https://www.winehq.org/), but this layer would virtualize not only the linux's syscalls (as Wine implements the Windows syscalls), but also all other resources a module needs (such as global .
 
-## Goal
+The problem is that I don't know which resources a linux module needs.
+I presume that there should be some global variables and internal API that this layer needs to virtualize.
 
-Port all linux's device drivers to redox at once.
-
-## Initial stuff to do
-
-* Compile redox.
-* Write a redox module.
-
-## How I got this idea
-
-* Minimize linux size
-* Refactor linux as a microkernel
-* write a compatibility layer for that
-* notice that a compatibility layer from linux to linux doesn't make sense.
-* get another kernel to be target of the translation layer.
-* choose redox since it seems a nice os and fits the current friction in the rust for linux project.
+If this layer succeeds, it will port all linux's device drivers to redox-os at once with reduced maintenance cost, that is, instead of maintaining all drivers, we just maintain the compatibility layer.
