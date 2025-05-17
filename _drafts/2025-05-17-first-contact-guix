@@ -1,0 +1,31 @@
+# First contributions to Guix System
+
+Guix System is a fairly new GNU System or GNU/Linux distribution,
+the pure GNU version ships with the [Hurd kernel](https://en.wikipedia.org/wiki/GNU_Hurd),
+while the Linux version ships with [linux-libre](https://en.wikipedia.org/wiki/Linux-libre)
+a linux fork with all of the binary blobs, obfuscated code and portions of code under proprietary licenses removed.
+
+It is the GNU implementation of [the pure functional deployment model](https://edolstra.github.io/pubs/phd-thesis.pdf),
+inaugurated by Nix and NixOS.
+
+As I can see, Guix cares much more about reprodutibility than NixOS and it has a dedicated HPC team.
+But since it is less mature, it is kind of rough around the edges, so I decided to contribute to it!
+
+## First bug report
+
+My first contact with the community was [this bug report](https://issues.guix.gnu.org/78274), 
+which was quickly closed, because it was not considered a bug.
+
+## First patch
+
+Guix is by default a source based distribution, thus a package is actually a recipe to build a given software.
+
+
+Before submiting the patch I checked if
+
+## Current Plan
+
+Now I'm updating the Docker package, the current package is version [20.10.27](https://packages.guix.gnu.org/packages/docker/20.10.27/).
+It is two years old.
+
+Configure a default wallpaper Gnome doesn't have a wallpaper configured out of the box.
