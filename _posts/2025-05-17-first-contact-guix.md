@@ -5,7 +5,7 @@ date:   2025-05-17 14:08:20 +0000
 categories: jekyll update
 ---
 
-# My first contributions to Guix System
+## My first contributions to Guix System
 
 Guix System is a fairly new GNU System or GNU/Linux distribution,
 the pure GNU version ships with the [Hurd kernel](https://en.wikipedia.org/wiki/GNU_Hurd),
