@@ -18,21 +18,23 @@ which was quickly closed, because it was not considered a bug.
 
 ## First patch
 
-Guix is by default a source based distribution, thus a package is actually a recipe to build a given software.
+Guix is, by default, a source based distribution, thus a package is actually a recipe to build a given software.
 This recipes are stored in the folder `gnu/packages`.
 
 My first [submitted patch](https://issues.guix.gnu.org/78393) proposed the addition of the Golang library [jwt](https://github.com/golang-jwt/jwt).
 The recipe for Golang libraries are very simple, because no compilation is required, to install a Golang library, you just need to download its source files. 
 
-Before submitying the patch I checked the file `golang-xyz.scm`, that constains a lot of Golang libraries and didn't find jwt.
-But after submitting it, a contributer pointed out that this project is already present, using guix's [packages search tool](https://packages.guix.gnu.org/packages/go-github-com-golang-jwt-jwt/3.2.2/). 
+Before sending the patch to the mailing list I checked the file `golang-xyz.scm`, that constains a lot of Golang libraries and didn't find jwt.
+But after submitting it, a contributer pointed out that this project is already present using guix's [packages search tool webpage](https://packages.guix.gnu.org/packages/go-github-com-golang-jwt-jwt/3.2.2/).
+This web page shows the location of the library as being `golang-crypto.scm`, a simple grep in guix's source code confirms that.
+So my patch was not accepted.
 
 ## Current Contribution
 
-Now I'm updating the Docker package, the current package is version [20.10.27](https://packages.guix.gnu.org/packages/docker/20.10.27/).
-It is two years old.
+Now I'm updating the Docker package, the current package is version [20.10.27](https://packages.guix.gnu.org/packages/docker/20.10.27/), which is two years old.
+I will write another post about it later. 
 
 ## Future Contributions 
 
-I want to add the package [act](https://github.com/nektos/act) and ghidra.
-Also configure a default wallpaper for Gnome, currently there is no default wallpaper and a blank dark blue wallpaper.
+In the futere I also plan to add the package [act](https://github.com/nektos/act) and ghidra.
+Also configure a default wallpaper for Gnome, currently there is no default wallpaper and a blank dark blue backgroud is the default behavior.
