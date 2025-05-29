@@ -38,8 +38,8 @@ So my patch was not accepted.
 
 ## Current Contribution
 
-Now I'm updating the Docker package, the current package is version [20.10.27](https://packages.guix.gnu.org/packages/docker/20.10.27/), which is two years old.
-I will write another post about it later. 
+Now I'm updating the Docker package to version 28.1.1, the current package is version [20.10.27](https://packages.guix.gnu.org/packages/docker/20.10.27/), which is two years old.
+This update is tracked in the [issue 74746](https://issues.guix.gnu.org/74746). 
 
 ## Future Contributions 
 
