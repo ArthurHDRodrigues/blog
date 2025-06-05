@@ -2,7 +2,7 @@
 layout: post
 title:  "My first contributions to Guix System"
 date:   2025-05-17 14:08:20 +0000
-categories: jekyll update
+categories: guix
 ---
 
 ## My first contributions to Guix System
