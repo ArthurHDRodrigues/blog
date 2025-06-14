@@ -52,3 +52,4 @@ Essa página agrega diferentes links e recursos relacionados a hacking, cyberseg
 ## Engenharia de Software
 - [Arquitetura do WhatsApp](https://newsletter.systemdesign.one/p/whatsapp-engineering)
 - [Minimal Linux Live](https://ivandavidov.github.io/minimal/book/)
+- [Gitops](https://github.com/readme/featured/defining-gitops)
