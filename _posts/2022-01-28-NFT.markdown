@@ -5,7 +5,7 @@ date:   2022-01-28 21:08:20 +0000
 categories: jekyll update
 ---
 
-## NFT's como ideia@
+## NFT's como ideia
 
 NFT se propõe a ser um registro descentralisado de propriedade privada. Ou seja, um registro de que uma determinada pessoa possui um determinado objeto. Para marcar esse registro, usa-se principalmente a <a href="https://en.wikipedia.org/wiki/Ethereum">Ethereum</a>, uma blockchain que permite a execução de código arbitrário com o custo de execução proporcional ao número de passos a serem executados e a quantidade de memória consumida. O ato de registrar um token na blockchain é chamado de <em>mint</em>, no Brasil, gerou-se o termo “mintar uma NFT”.
 
