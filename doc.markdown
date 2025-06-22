@@ -44,11 +44,15 @@ Artigos:
 * Lembrei da apresentação: **"Ambientes computacionais para a reprodutibilidade de softwares (de pesquisa) com GNU Guix e Software Heritage"**
 de maio/2024 com o Prof. Alexandre Abdo
 
-![guix logo](./images/Guix-print(1).svg)
-
 Guix System tem uma [equipe focada em HPC](https://hpc.guix.info/) e muitos princípios importantes para HPC:
 * reprodutibilidade
 * implantação de uma frota de maquinas
+
+Tenho dois patches aceitos no Guix:
+* Update httpd: [78570](https://issues.guix.gnu.org/78570) as [9f33cb8825](https://codeberg.org/guix/guix/commit/9f33cb88252f628899c1e11f8b72b9f0022804e1)
+* Update dropbear: [78600](https://issues.guix.gnu.org/78600) as [ac88ea15c7](https://codeberg.org/guix/guix/commit/ac88ea15c74e918d3a5ad9c5e45f3ef2af2c2d20)
+
+E atualmente estou trabalhando para atualizar o pacote Docker: [issue 74746](https://issues.guix.gnu.org/74746).
 
 Outros gerenciadores de pacotes podem ser encontrados no repositório [awesome HPC](https://github.com/trevor-vincent/awesome-high-performance-computing).
 
