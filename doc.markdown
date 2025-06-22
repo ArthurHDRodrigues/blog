@@ -25,6 +25,12 @@ Lemos o artigo [A Theoretician’s Guide to the Experimental Analysis of Algorit
 9. Chegue a conclusões bem-justificadas
 10. Apresente os dados de modo informativo
 
+Em 2017, um [novo algoritmo](https://epubs.siam.org/doi/10.1137/1.9781611974782.32) para o problema de conexidade dinâmica foi publicado.
+Ele adiciona mais estruturas de dados sobre HDT, obtendo menor consumo assintótico, mas com constantes maiores.
+Uma ideia de artigo é implementar esse algoritmo e fazer um experimento comparativo.
+Os autores desse artigo publicaram [uma versão mais longa (56 paginas)](https://arxiv.org/abs/1609.05867) explicando em detalhes como as estruturas de dados funcionam.
+
+Em HPC, essa metodologia ainda se preocupa com mais fatores, [Large scale graph processing systems: survey and an experimental evaluation](https://dl.acm.org/doi/10.1007/s10586-015-0472-6).
 
 ## Criar distro GNU/Linux focada em HPC
 
@@ -73,3 +79,4 @@ A ideia é propor as práticas de DevOps e engenharia de plataforma para o ambie
 * Artigo: [Containers in HPC: a survey](https://dl.acm.org/doi/10.1007/s11227-022-04848-y)
 * Artigo: [Containerization for High Performance Computing Systems: Survey and Prospects](https://dl.acm.org/doi/10.1109/TSE.2022.3229221)
 * Artigo [Shifter: Containers for HPC](https://cug.org/proceedings/cug2016_proceedings/includes/files/pap103s2-file1.pdf)
+* Artigo: [A COMPARATIVE STUDY OF PLATFORM ENGINEERING TOOLS: IMPLICATIONS FOR SYSTEM DESIGN AND SCALABILITY](https://iaeme.com/Home/article_id/IJDO_01_01_004)
