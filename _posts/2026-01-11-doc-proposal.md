@@ -1,8 +1,16 @@
 ---
 layout: page
 title: Proposta de tema para Doutorado em HPC
-permalink: /doc/
+date: 2026-01-11 10:08:20 +0000
 ---
+
+## Introdução
+
+O que se segue é uma lista de propostas de temas para meu doutorado em HPC.
+Após conversar com meu futuro orientador, focamos no tema de reprodutibilidade. O que me levou a participar do [ACM REP 2025](./2025-08-05-acm-rep-25.md).
+
+Originalmente esse texto foi disponibilizado como uma pagina própria nesse blog.
+Decidi transformá-lo em um *post*, como qualquer outro.
 
 ## Metodologia para análise experimental de algoritmos em grafos
 
